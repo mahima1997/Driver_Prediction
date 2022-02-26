@@ -6,3 +6,5 @@ Computed temporal, geographical, driver and other features along with rolling me
 Metrics : In this problem, we want that a ride should be assigned to the driver with the highest possibility of acceptance. So, precision over recall is important. Because precision is (TP/(TP+FP)) which means of all the drivers that we assigned a score of 1, how many were actually correct.
 
 80\% of the times ride was assigned to the correct driver.
+
+Note : When AUC is 0.7, it means there is a 70% chance that the model will be able to distinguish between positive class and negative class. We did not use AUC because in this problem, we assign a class 1 only to one driver per order ID in the model predictions while in the actual available data, more than one drivers can have class label one per order ID. So AUC wil go down because of this reason and we might get a wrong picture.
