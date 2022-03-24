@@ -1,4 +1,18 @@
 # Driver_Prediction
+
+DATA:
+bookings.log (7 lac rows)
+| timestamp | order_id | booking_status | customer_id | driver_id | trip_distance | pickup_lat | pickup_long | 
+booking_status : CREATED/DRIVER_FOUND/PICKED_UP/COMPLETED
+
+participant.log (6 lac rows)
+| timestamp | order_id | participant_status | experiment_id | driver_id | trip_distance | driver_lat | driver_long | driver_gps_accuracy |
+participant_status: CREATED/ACCEPTED/IGNORED/REJECTED
+
+test_data (1 lac rows)
+| timestamp | order_id | customer_id | driver_id | trip_distance | driver_lat | driver_long | driver_gps_accuracy | pickup_lat | pickup_long | 
+
+
 Predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 Trained Logistic regeression to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 
