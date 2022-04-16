@@ -30,9 +30,23 @@ The below observation indicated imbalanced dataset.
 
 SMOTE was performed on training data to create synthetic data by upsampling.
 
-Trained Logistic regeression and Random Forest to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
+Trained Random Forest to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 
-Computed temporal(day_of_week, is_busy_hour), geographical(haversine distance between pickup and drop location), driver(driver_location_cluster and customer_location_cluster trained by K Means, driver_response_time). #and other features along with rolling mean and median across days for feature engineering.
+Computed temporal(day_of_week, is_busy_hour), geographical(haversine distance between pickup and drop location), driver(driver_location_cluster and customer_location_cluster trained by K Means, driver_response_time).
+
+Following result was obtained when Random Forest was trained.
+
+              precision    recall  f1-score   support
+
+           0       0.91      0.93      0.92      3846
+           1       0.99      0.99      0.99     36051
+
+    accuracy                           0.98     39897
+   macro avg       0.95      0.96      0.95     39897
+weighted avg       0.98      0.98      0.98     39897
+
+******************************************************************************************************************************************************************
+When dealing with probability output, below points are considered:
 
 Metrics : In this problem, we want that a ride should be assigned to the driver with the highest possibility of acceptance. So, precision over recall is important. Because precision is (TP/(TP+FP)) which means of all the drivers that we assigned a score of 1, how many were actually correct.
 
