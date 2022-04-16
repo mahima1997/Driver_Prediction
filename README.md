@@ -16,8 +16,9 @@ participant_status: CREATED/ACCEPTED/IGNORED/REJECTED
 | timestamp | order_id | customer_id | driver_id | trip_distance | driver_lat | driver_long | driver_gps_accuracy | pickup_lat | pickup_long | 
 
 
-Predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
-Trained Logistic regeression to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
+Predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day. Test data has 10 drivers for every order and the question is to predict if that driver should be assigned a ride.
+
+Trained Logistic regeression and Random Forest to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 
 Computed temporal(day_of_week, is_busy_hour), geographical(haversine distance between pickup and drop location), driver(driver_location_cluster and customer_location_cluster trained by K Means, driver_response_time). #and other features along with rolling mean and median across days for feature engineering.
 
