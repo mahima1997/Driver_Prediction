@@ -17,6 +17,25 @@ participant_status: CREATED/ACCEPTED/IGNORED/REJECTED
 
 
 Predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day. Test data has 10 drivers for every order and the question is to predict if that driver should be assigned a ride.
+Following is the distribution of 
+
+Drivers/order_id    Count
+1                   161884
+2                   14172
+3                   2107
+4                   447
+5                   110
+6                   55
+7                   21
+8                   10
+9                   2
+13                  1
+10                  1
+
+Below is the count for presence of classes in the dataset. 1 means ride ACCEPTED while 0 means IGNORED/REJECTED.
+
+1    144652  (~90%)
+0     14936  (~10%)
 
 Trained Logistic regeression and Random Forest to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 
