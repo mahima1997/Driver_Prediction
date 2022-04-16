@@ -24,6 +24,7 @@ Following is the distribution of Drivers per order_id to know that how many driv
 
 
 Below is the count for presence of classes in the dataset. 1 means ride ACCEPTED while 0 means IGNORED/REJECTED.
+The below observation indicated imbalanced dataset.
 
 ![image](https://user-images.githubusercontent.com/32570848/163670770-f19f6035-39f3-4a93-97ea-fde7389c190e.png)
 
