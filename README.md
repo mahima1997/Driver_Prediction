@@ -28,6 +28,7 @@ The below observation indicated imbalanced dataset.
 
 ![image](https://user-images.githubusercontent.com/32570848/163670770-f19f6035-39f3-4a93-97ea-fde7389c190e.png)
 
+SMOTE was performed on training data to create synthetic data by upsampling.
 
 Trained Logistic regeression and Random Forest to predict which driver should be assigned a cab ride order. Details about the rides and driver's response for 10 days is provided and predictions have to be done for the 11th day.
 
