@@ -45,7 +45,7 @@ Following result was obtained when Random Forest was trained.
    macro avg       0.95      0.96      0.95     39897
 weighted avg       0.98      0.98      0.98     39897
 
-auc = 0.95
+validation auc = 0.95
 ******************************************************************************************************************************************************************
 When dealing with probability output, below points are considered:
 
